@@ -1,0 +1,5 @@
+C:\Users\admin\OneDrive\Documents\SharpDevelop Projects\test\Pairwise\bin\Debug\Pairwise.exe
+C:\Users\admin\OneDrive\Documents\SharpDevelop Projects\test\Pairwise\bin\Debug\Pairwise.pdb
+C:\Users\admin\OneDrive\Documents\SharpDevelop Projects\test\Pairwise\obj\Debug\Pairwise.csprojResolveAssemblyReference.cache
+C:\Users\admin\OneDrive\Documents\SharpDevelop Projects\test\Pairwise\obj\Debug\Pairwise.exe
+C:\Users\admin\OneDrive\Documents\SharpDevelop Projects\test\Pairwise\obj\Debug\Pairwise.pdb
