@@ -54,15 +54,20 @@ items[2] = temp; // items[2] = "two"
 				{
 					array[j]=array[i]+array[j];
 					sum[i]= array[j];
-				}		
+				}
+				maxtotal +=sum[i]
 			}
 			
-			return sum;
+			return maxtotal; //final sume not taken care off
 		}
 		
 		
 		static int compare(int length)
 		{
+			int[] sum ={ };
+			int maxtotal = 0 ;
+			int values = 0;
+			
 			
 		}
 		
