@@ -30,7 +30,7 @@ namespace Pairwise
 				Console.WriteLine("Please Enter a nonzero number {0} :" ,arrSize);
 				int value = Convert.ToInt32(Console.ReadLine());
 				
-				//Console.WriteLine("Round "+ arrSize);
+				//Console.WriteLine("Round "+ arrSize); //checkpoint
 				
 				arr.Add(value);
 				
@@ -51,7 +51,7 @@ namespace Pairwise
 			
 			Console.WriteLine("Number of arrangements:"+ counter+"\nNumber of unique arrangements: "+sumsAndArrangements.Count);
 			int highestsum = sumsAndArrangements.Keys.Max();
-			Console.WriteLine("Highest sum is: "+ highestsum + "\nArray arrangement with this sum: "+sumsAndArrangements[highestsum]);
+			Console.WriteLine("Highest sum is: "+ highestsum);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
@@ -129,11 +129,11 @@ namespace Pairwise
 		}
 		
 		
-		private static void toSwap (List<int> values, int indexA,int indexB)
+		private static void toSwap (List<int> values, int i,int j)
 		{
-			int tmp = values[indexA];
-			values[indexA] = values[indexB];
-			values[indexB] = tmp;
+			int tmp = values[i];
+			values[i] = values[j];
+			values[j] = tmp;
 		}
 		
 		
