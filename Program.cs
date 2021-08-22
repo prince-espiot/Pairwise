@@ -51,7 +51,7 @@ namespace Pairwise
 			
 			Console.WriteLine("Number of arrangements:"+ counter+"\nNumber of unique arrangements: "+sumsAndArrangements.Count);
 			int highestsum = sumsAndArrangements.Keys.Max();
-			Console.WriteLine("Highest sum is: "+highestsum +"\nArray arrangement with this sum: "+sumsAndArrangements[highestsum]);
+			Console.WriteLine("Highest sum is: "+ highestsum + "\nArray arrangement with this sum: "+sumsAndArrangements[highestsum]);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
@@ -64,7 +64,7 @@ namespace Pairwise
 				sums.Add(summingWhatever(arr1)); //perform exhaustive summing operation
 				sumsAndArrangements[sums[counter]]=arr1; //map sum to array arrangment
 				toSwap(arr1,j,j-1);//change array arrangement
-				//Console.WriteLine(arr1 +"," +sums[counter]);
+				//Console.WriteLine(arr1 +"," +sums[counter]); //checkpoint
 			}
 			
 			return counter;
@@ -78,8 +78,8 @@ namespace Pairwise
 			{
 				sums.Add(summingWhatever(arr)); //perform exhaustive summing operation
 				sumsAndArrangements[sums[counter]]=arr; //map sum to array arrangment
-				toSwap(arr,i,i-1);//change array arrangement
-				//Console.WriteLine(arr +"," +sums[counter]);				
+				toSwap(arr,i,i+1);//change array arrangement
+				//Console.WriteLine(arr+"," +sums[counter]);		 // checkpoint		
 			}
 			
 			return counter;
@@ -89,8 +89,10 @@ namespace Pairwise
 		private static void arrowHeadBuilder (List<int>arr, List<int>arr1)
 		{
 			arr.Sort();
+			
 			arr1.Reverse();
-			arr1.Sort();
+			
+			
 			int j;
 			int midpoint;
 			if(arr.Count % 2 ==0) //find midpoint
@@ -100,10 +102,9 @@ namespace Pairwise
 			
 				midpoint =(arr.Count/2)+1;
 			}	
-			//Console.WriteLine(arr +"," +arr1);
-			
+			//Console.WriteLine(arr +"," +arr1); //checkpoint		
 			for(j = midpoint; j<arr.Count;j++){
-				arr1[j]=arr[j-midpoint];
+				arr.ForEach(item =>arr1.Add(item));
 			}	
 		}
 		
